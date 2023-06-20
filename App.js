@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import AuthNavigator from "./navigators/AuthNavigator";
+import UserProvider from "./src/components/helpers/UserProvider";
 
-export default function App() {
+import { useCallback } from "react";
+import { useFonts } from "expo-font";
+import "react-native-gesture-handler";
+import * as SplashScreen from "expo-splash-screen";
+
+SplashScreen.preventAutoHideAsync();
+
+const App = () => {
+  const [fontsLoaded] = useFonts({
+    "Uber-Move": require("./assets/fonts/UberMove.otf"),
+    "Uber-Move-Bold": require("./assets/fonts/UberMoveBold.otf"),
+  });
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (fontsLoaded) onLayoutRootView();
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <UserProvider>
+      <AuthNavigator />
+    </UserProvider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
