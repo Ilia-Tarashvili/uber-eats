@@ -78,7 +78,7 @@ const Settings = ({ navigation }) => {
     <Container>
       <UserContainer>
         <ProfilePic source={imgUrl ? { uri: imgUrl } : imageUrl} />
-        <Name>{user.userName}</Name>
+        <Name>John Doe</Name>
         <ImagePicker title="EDIT ACCOUNT" callback={setImgUrl} />
       </UserContainer>
       <MainTitle>Saved places</MainTitle>
