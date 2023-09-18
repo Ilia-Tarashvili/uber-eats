@@ -4,3 +4,6 @@
 Short Description 📋
 
 an app to order food everywhere you want. you can sign up, log in, reset password, add items to the basket, change profile picture and etc.
+
+What Did I Learn 📚
+
