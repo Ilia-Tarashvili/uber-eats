@@ -11,8 +11,8 @@ What Did I Learn 📚
 
 · Using an image picker
 
-· User log-in and register
 
-· Add to basket feature
+
+
 
 
