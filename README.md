@@ -13,4 +13,6 @@ What Did I Learn 📚
 
 · User log-in and register
 
+· Add to basket feature
+
 
