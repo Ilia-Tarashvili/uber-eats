@@ -8,7 +8,9 @@ A mobile application was developed using React Native that revolutionizes the wa
 What Did I Learn 📚
 
 · Mapping an array on button click
+
 · Using an image picker
+
 · User log-in and register
 
 
