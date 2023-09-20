@@ -3,7 +3,7 @@
 
 Short Description 📋
 
-an app to order food everywhere you want. you can sign up, log in, reset password, add items to the basket, change profile picture and etc.
+A mobile application was developed using React Native that revolutionizes the way people order food online, making the process simple and convenient. This project represents a fusion of passion for mobile app development and a commitment to enhancing user experiences.
 
 What Did I Learn 📚
 
